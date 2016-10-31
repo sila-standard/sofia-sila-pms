@@ -2,11 +2,13 @@
 
 SOFIA (<b>S</b>iLA-compliant, <b>O</b>pen source, <b>F</b>ast, <b>I</b>ntelligent <b>A</b>pplication) is a reference implementation of a <a href="http://www.sila-standard.org/standards/pms/">SiLA PMS Consumer</a>. Project SOFIA promotes the development of open source laboratory automation tools.
 
+<img src="http://82.196.4.104:3000/images/image01.png"/>
+
 SOFIA enable you to connect multiple SiLA-compliant lab devices to your virtual lab, share and discover SiLA lab devices in your network, execute SiLA Commands (e.g. move a robot, dispense a liquid) and get data (e.g. temperature, status, duration) from your lab devices, and collaborate and share in real time your protocols/methods runs with any other user in your network.
 
 A link to SOFIA's test site can be found here:
 
-http://sila.test.wega-it.com/
+http://82.196.4.104:3000/
 
 
 A video of SOFIA controlling a dispenser in the lab can be seen in the following link:
@@ -17,6 +19,7 @@ SOFIA is an open source, cross-platform project that was developed as a proof-of
 
 SOFIA could potentially be developed into an on-demand laboratory services hosted in the cloud, where user can run real-time experiments in remote labs across the globe.
 
+<img src="http://82.196.4.104:3000/images/image02.png" />
 
 # How to run
 To install and run SOFIA, you first need to install <a href="http://git-scm.com/">git</a>, <a href="https://nodejs.org/">node.js (v0.12.2+)</a>, <a href="https://www.npmjs.com/">npm (v2.7.4)</a>, and <a href="https://www.meteor.com/">meteor (v1.1)</a>. The "run.js" script will run only in node.js version 0.12 or higher (check in the terminal your version with "node -v").
@@ -46,8 +49,19 @@ If you need to communicate to SiLA lab devices/drivers hosted in different IPs (
 SOFIA will run now at <a href="http://192.168.0.1/">http://192.168.0.1:80/</a> in your browser, and will be able to connect and control all the SiLA lab devices/drivers within your <b>local network</b>.
 
 
+<img src="http://82.196.4.104:3000/images/image00.png"/>
+
+
+# Troubleshoot
+
+You need to update your NodeJS version to (v0.12.2+), if you get the follwoing error running the file <code>run.js</code>:
+
+<code>child = spawn(command, [ 'install', '--prefix', __dirname + '/consumer/event </code><br/>
+<code>TypeError: undefined is not a function</code>
+
+
 # TODO
 - Instructions to install SOFIA in Windows
 
 
-Copyright (c) 2015 <a href="http://www.wega-it.com/">wega Informatik AG</a> | <a href="mailto:erick.bastidas@wega-it.com">Erick Bastidas</a>
+Copyright (c) 2015 <a href="mailto:ebastidas3@gmail.com">Erick Bastidas</a>  |  <a href="http://www.wega-it.com/">wega Informatik AG</a>
